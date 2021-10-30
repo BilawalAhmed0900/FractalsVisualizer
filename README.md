@@ -15,13 +15,13 @@ Similarly Dart vs Qt C++ made Dart an instant winner.
 
 # Performance
 
-The only main problem is that the algorithm is implemented in single-threaded mode. Each pixel of the image is calculated sequential and is independent of each other, so using ideas from CUDA and such, one can implement a highly parallel version of the algorithm but this program was implemented within 24 hours and I had other work so, I didn't bother. The feasible size to generate image of is 10000-20000 by 5000-10000 (a 2:1 image), which this program can generate within 15 minutes on (i5-9300H, Windows 10 19042.1288) using almost 300 MiB of RAM.
+The only main problem is that the algorithm is implemented in single-threaded mode. Each pixel of the image is calculated sequential and is independent of each other, so using ideas from CUDA and such, one can implement a highly parallel version of the algorithm but this program was implemented within 24 hours and I had other work so, I didn't bother. The feasible size to generate image of is 24000 by 12000 (a 2:1 image) with 70 steps per pixel, which this program can generate within 2 hour on (i5-9300H, Windows 10 19042.1288) using almost 1.5 GiB of RAM.
 
 # Images Generated
 
 Few images generated from this programs are
 ![Image 1](/fractals-images/FractalImageGenerated-1635571321113.png "4-degree-polynomial-24000x12000")
-![Image 2](/fractals-images/FractalImageGenerated-1635590924955.png "5-degree-polynomial-12000x6000")
+![Image 2](/fractals-images/FractalImageGenerated-1635609919113.png "5-degree-polynomial-24000x12000")
 
 # How The Algorithm Works
 
